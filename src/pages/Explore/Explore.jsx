@@ -17,8 +17,10 @@ const Explore = () => {
     <div className="container">
       <LeftSideBar />
       <div className="main-content">
+  
         <h3>Explore</h3>
         <input
+          style={{ width: "100%",padding:"1rem",borderRadius:"5px" ,margin:"1rem 0rem" , textAlign:"center" }}
           className="search-bar"
           type="text"
           placeholder="Search video by title"
