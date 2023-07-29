@@ -19,7 +19,7 @@ const Explore = () => {
       <div className="main-content">
         <h3>Explore</h3>
         <input
-        className="search-bar"
+          className="search-bar"
           type="text"
           placeholder="Search video by title"
           onChange={(e) => setSearchTerm(e.target.value)}
