@@ -1,40 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .container {
   display: flex;
-  flex-direction: column; /* On small screens, the layout is stacked vertically */
+  flex-direction: column; 
 }
 
 .sidebar {
-  background-color: #f1f1f1; /* Replace with desired background color */
-  flex: 0 0 200px; /* Set a fixed width for the sidebar (adjust as needed) */
+  background-color: #f1f1f1; 
+  flex: 0 0 400px; 
 }
 
 .main-content {
-  flex: 1; /* The main content will take up the remaining available space */
-  padding: 20px; /* Add some padding for better spacing */
+  flex: 1;
+  padding: 20px; 
 }
 
-.category-container {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0.5rem 0rem;
-  margin: 0.5rem 0rem;
-}
+
 
 @media (min-width: 768px) {
   .container {
-    flex-direction: row; /* On larger screens, the layout will be side-by-side */
+    flex-direction: row;
   }
   .sidebar {
-    flex: 0 0 250px; /* Increase the width of the sidebar */
+    flex: 0 0 450px; 
   }
   .main-content {
     flex: 1; /* The main content will still take up the remaining space */
   }
+}
+
+i.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48;
+    color: red;
+    cursor: pointer;
+  }
+
+  i#red-fill.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 1,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48;
+    color: red;
+    cursor: pointer;
+}
+
+.card-cont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 17rem;
+  height: 340px;
+  background-color: rgb(246, 187, 187);
+  gap: 10px;
+}
+
+/*  IMAGE */
+
+.card-img {
+  display: flex;
+  /* flex-direction: column; */
+  align-items: flex-start;
+  justify-content: center;
+  /* background: #cd441649; */
+  width: 12rem;
+  height: 8rem;
+  position: relative;
+  padding: 1.5rem 2rem 0rem 3rem;
+  gap: 10px;
+}
+
+.card-img img {
+  height: 100%;
+  width: auto;
+}
+
+/*  BADGE DETAILS */
+.card-badge {
+  display: flex;
+  align-items: center;
+  margin-left: -25px;
+  margin-top: -15px;
+}
+
+.card-badge .red-fav {
+  color: red;
+}
+
+i.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 48;
+  color: red;
+  cursor: pointer;
+}
+
+i#red-fill.material-symbols-outlined {
+  font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 48;
+  color: red;
+  cursor: pointer;
+}
+
+/* CARD CONTAINER */
+
+.card-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 240px;
+}
+
+/* BUTTONS */
+.button {
+  color: white;
+  background-color: blue;
+  cursor: pointer;
+}
+
+.active-button {
+  color: white;
+  background-color: black;
+  /* background-color: #3b82f6; */
+  cursor: pointer;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+
+.card-button {
+  color: #fff;
+  text-align: center;
+  padding: 0.5rem;
+  width: 10rem;
+  border: none;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  background-color: #881808bf;
+  cursor: pointer;
+}
+
+i {
+  cursor: pointer;
 }

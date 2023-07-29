@@ -39,7 +39,7 @@ const EditNotes = ({ onClose,videoId,noteId }) => {
           }
           placeholder="Edit a note"
         />
-        <button disabled={noteData?.note === ""} onClick={handleSubmit}>
+        <button className="save-button" disabled={noteData?.note === ""} onClick={handleSubmit}>
           Edit Note
         </button>
       </div>

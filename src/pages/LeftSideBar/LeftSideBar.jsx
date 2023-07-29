@@ -16,10 +16,10 @@ const LeftSideBar = () => {
             <i className="fa-solid fa-compass fa-lg"></i>Explore
           </li>
           <li onClick={() => navigate("/playlist")}>
-            <i className="fa-solid fa-bookmark fa-lg"></i>Playlist
+            <span className="material-symbols-outlined">edit_note</span>PlayList
           </li>
           <li onClick={() => navigate("/watchlater")}>
-            <i className="fa-solid fa-bookmark fa-lg"></i>Watch Later
+            <i className="fa-solid fa-clock fa-lg"></i>Watch Later
           </li>
         </ul>
       </div>

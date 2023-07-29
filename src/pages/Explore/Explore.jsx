@@ -2,15 +2,16 @@ import { useState } from "react";
 import { useDataContext } from "../../context/DataContext";
 import LeftSideBar from "../LeftSideBar/LeftSideBar";
 import VideoCard from "../../components/VideoCard/VideoCard";
+import "./Explore.css";
 
 const Explore = () => {
+  const { dataState } = useDataContext();
 
-  const {dataState} = useDataContext()
+  const [searchTerm, setSearchTerm] = useState("");
 
-  const [searchTerm,setSearchTerm] = useState("")
-
-  const filteredData = dataState?.videosData?.filter(data=>data.title.toLowerCase().includes(searchTerm.toLowerCase()))
-
+  const filteredData = dataState?.videosData?.filter((data) =>
+    data.title.toLowerCase().includes(searchTerm.toLowerCase())
+  );
 
   return (
     <div className="container">
@@ -18,6 +19,7 @@ const Explore = () => {
       <div className="main-content">
         <h3>Explore</h3>
         <input
+        className="search-bar"
           type="text"
           placeholder="Search video by title"
           onChange={(e) => setSearchTerm(e.target.value)}

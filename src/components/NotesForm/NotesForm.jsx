@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useDataContext } from "../../context/DataContext";
 import { v4 as uuid } from "uuid";
+import "./NotesForm.css"
 
 const NotesForm = ({ onClose,videoId }) => {
   const { dataDispatch } = useDataContext();
@@ -22,14 +23,14 @@ const NotesForm = ({ onClose,videoId }) => {
         <span className="close-button" onClick={onClose}>
           &times;
         </span>
-        <h2>Modal Title</h2>
+        <h2>Add a note</h2>
         <input
           type="text"
           value={note}
           onChange={handleChange}
           placeholder="Add a note"
         />
-        <button disabled={note === ""} onClick={handleSubmit}>
+        <button className="save-button" disabled={note === ""} onClick={handleSubmit}>
           Add New Note
         </button>
       </div>

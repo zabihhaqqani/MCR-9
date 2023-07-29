@@ -22,10 +22,14 @@
 
 }
 .sidebar-items li:hover{
-    background-color: blue;
+    background-color: rgba(0, 0, 255, 0.671);
     cursor: pointer;
     color: white;
     transition: 0.25s;
     /* padding: 1rem; */
 }
 
+.material-symbols-outlined{
+    font-size: 35px;
+    padding-right: 0.5rem;
+}

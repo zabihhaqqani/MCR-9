@@ -41,3 +41,12 @@
   background-color: #881808bf;
   cursor: pointer;
 }
+
+
+.category-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0.5rem 0rem;
+  margin: 0.5rem 0rem;
+  
+}

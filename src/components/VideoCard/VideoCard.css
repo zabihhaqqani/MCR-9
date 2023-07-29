@@ -1,3 +1,35 @@
-.video-card{
-    cursor: pointer;
+.video-card {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  justify-content: space-around;
+  width: 17rem;
+  height: 300px;
+  /* gap: 10px; */
+  padding: 0.5rem;
+  margin: 0.5rem;
 }
+.video-card-img {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+  /* height: 100%; */
+}
+
+.video-container-main i {
+  display: flex;
+  justify-content: right;
+  position: relative;
+  text-align: right;
+  top: 35px;
+  right: 25px;
+  z-index: 999;
+   display: flex;
+  align-items: center;
+  margin-left: -25px;
+  margin-top: -15px;
+}
+
+.

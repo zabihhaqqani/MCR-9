@@ -1,0 +1,20 @@
+.title-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0.5rem 0rem;
+}
+
+.title-container i {
+  padding: 1rem;
+}
+
+.title-container span {
+  /* margin-left: 0.5rem; */
+  cursor: pointer;
+}
+
+.icons-container {
+  display: flex;
+  align-items: center;
+}

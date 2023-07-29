@@ -1,0 +1,11 @@
+.notes-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.5rem 0rem;
+}
+
+
+.notes-container i{
+    padding: 1rem;
+}
